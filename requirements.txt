@@ -1,0 +1,5 @@
+robotframework==7.1
+robotframework-crypto==0.3.0
+robotframework-seleniumlibrary==6.6.1
+robotframework-seleniumscreenshots==0.9.5
+robotframework-yamllibrary==0.2.8
