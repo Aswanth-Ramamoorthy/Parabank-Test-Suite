@@ -10,8 +10,6 @@ Web elements testing for the Parabank website using Robot Framework.
 - [Libraries Used](#libraries-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
