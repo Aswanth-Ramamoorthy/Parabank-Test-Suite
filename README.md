@@ -1,6 +1,6 @@
 # Parabank Test Suite
 
-Web elements testing for the Parabank website using Robot Framework.
+GUI testing for the Parabank website using Robot Framework.
 
 ## Table of Contents
 
