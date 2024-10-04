@@ -29,6 +29,7 @@ Valid Bill Payment
         Click Element    ${billPayPage.sendPayment_button}
         Sleep    3
         Wait Until Page Contains    ${billPayPage.paymentComplete}    timeout=10s
+        @{account}    Get List Items    ${billPayPage.fromAccount}
     END
     
 
@@ -54,6 +55,7 @@ Empty Bill Payment Fields
         Wait Until Page Contains Element    ${billPayPage.account.empty}    timeout=10s
         Wait Until Page Contains Element    ${billPayPage.verifyAccount.empty}    timeout=10s
         Wait Until Page Contains Element    ${billPayPage.amount.empty}    timeout=10s
+        Click Element    ${accountServicesPage.BillPay}
 
     END
     
@@ -82,4 +84,5 @@ Invalid payee account
         Wait Until Page Contains Element    ${billPayPage.account.invalid}    timeout=10s
         Wait Until Page Contains Element    ${billPayPage.verifyAccount.invalid}    timeout=10s
         Wait Until Page Contains Element    ${billPayPage.amount.invalid}    timeout=10s
+        Click Element    ${accountServicesPage.BillPay}
     END
