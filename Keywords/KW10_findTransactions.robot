@@ -15,6 +15,7 @@ Find by Transaction with valid Transaction ID
         Input Text    ${findTransactionsPage.findByTransactionID}    ${transactionID.valid}
         Click Element    ${findTransactionsPage.transactionID_button}
         Wait Until Page Contains    ${findTransactionsPage.success}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with invalid Transaction ID
@@ -26,6 +27,7 @@ Find by Transaction with invalid Transaction ID
         Input Text    ${findTransactionsPage.findByTransactionID}    ${transactionID.invalid}
         Click Element    ${findTransactionsPage.transactionID_button}
         Wait Until Page Contains Element    ${findTransactionsPage.transactionIDError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with empty Transaction ID
@@ -36,6 +38,7 @@ Find by Transaction with empty Transaction ID
         Select From List By Value    ${findTransactionsPage.selectanAccount}    ${i}
         Click Element    ${findTransactionsPage.transactionID_button}
         Wait Until Page Contains Element    ${findTransactionsPage.transactionIDError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with valid Transaction Date
@@ -47,6 +50,7 @@ Find by Transaction with valid Transaction Date
         Input Text    ${findTransactionsPage.findByDate}    ${transactionDate.valid}
         Click Element    ${findTransactionsPage.transactionDate_button}
         Wait Until Page Contains    ${findTransactionsPage.success}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with invalid Transaction Date
@@ -58,6 +62,7 @@ Find by Transaction with invalid Transaction Date
         Input Text    ${findTransactionsPage.findByDate}    ${transactionDate.invalid}
         Click Element    ${findTransactionsPage.transactionDate_button}
         Wait Until Page Contains Element    ${findTransactionsPage.transactionDateError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with empty Transaction Date
@@ -68,6 +73,7 @@ Find by Transaction with empty Transaction Date
         Select From List By Value    ${findTransactionsPage.selectanAccount}    ${i}
         Click Element    ${findTransactionsPage.transactionDate_button}
         Wait Until Page Contains Element    ${findTransactionsPage.transactionDateError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with valid Transaction Date Range
@@ -80,6 +86,7 @@ Find by Transaction with valid Transaction Date Range
         Input Text    ${findTransactionsPage.findByDateRangeTo}    ${transactionDate.toDate.Valid} 
         Click Element    ${findTransactionsPage.transactionDateRange_button}
         Wait Until Page Contains    ${findTransactionsPage.success}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with invalid Transaction Date Range
@@ -92,6 +99,7 @@ Find by Transaction with invalid Transaction Date Range
         Input Text    ${findTransactionsPage.findByDateRangeTo}    ${transactionDate.toDate.Invalid} 
         Click Element    ${findTransactionsPage.transactionDateRange_button}
         Wait Until Page Contains Element    ${findTransactionsPage.transactionDateRangeError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with empty from and to dates
@@ -102,6 +110,7 @@ Find by Transaction with empty from and to dates
         Select From List By Value    ${findTransactionsPage.selectanAccount}    ${i}
         Click Element    ${findTransactionsPage.transactionDateRange_button}
         Wait Until Page Contains Element    ${findTransactionsPage.transactionDateRangeError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with valid Transaction Amount
@@ -113,6 +122,7 @@ Find by Transaction with valid Transaction Amount
         Input Text    ${findTransactionsPage.findByAmount}    ${transactionAmount.valid}
         Click Element    ${findTransactionsPage.findByAmount_button}
         Wait Until Page Contains    ${findTransactionsPage.success}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with invalid Transaction Amount
@@ -124,6 +134,7 @@ Find by Transaction with invalid Transaction Amount
         Input Text    ${findTransactionsPage.findByAmount}    ${transactionAmount.invalid}
         Click Element    ${findTransactionsPage.findByAmount_button}
         Wait Until Page Contains Element    ${findTransactionsPage.amountError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END
 
 Find by Transaction with empty Transaction Amount
@@ -134,4 +145,5 @@ Find by Transaction with empty Transaction Amount
         Select From List By Value    ${findTransactionsPage.selectanAccount}    ${i}
         Click Element    ${findTransactionsPage.findByAmount_button}
         Wait Until Page Contains Element    ${findTransactionsPage.amountError}    timeout=10s
+        Click Element    ${accountServicesPage.FindTransactions}
     END

@@ -75,4 +75,3 @@ Invalid Customer Login
     Input Text    ${landingPage.clogin.pwd}    ${invalidCustomer.pwd}
     Click Element    ${landingPage.clogin.login_button}
     wait until page contains    text=${customerLogin.invalidLoginError}
-    Sleep    3

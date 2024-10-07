@@ -15,7 +15,6 @@ Valid Transfer Funds between accounts
     ...               6. Click the transfer button.
     ...               7. Verify that the transfer is successful and the correct confirmation message is displayed.
     Click Element    ${accountServicesPage.TransferFunds}
-    Click Element    ${accountServicesPage.TransferFunds}
     Wait Until Page Contains    ${fundTransferPage.transferFundstext}    timeout=10s
     Input Text    ${fundTransferPage.amount}    ${smallAmount}
     Sleep    5s
@@ -27,6 +26,7 @@ Valid Transfer Funds between accounts
             Select From List By Value    ${fundTransferPage.toAccount}    ${j}
             Click Element    ${fundTransferPage.transfer_button}
             Wait Until Page Contains    ${fundTransferPage.transferSuccess}    timeout=10s
+            Go Back
         END
     END
 
@@ -52,5 +52,6 @@ Invalid Transfer Funds between accounts
             Select From List By Value    ${fundTransferPage.toAccount}    ${j}
             Click Element    ${fundTransferPage.transfer_button}
             Wait Until Page Contains    ${fundTransferPage.transferError}    timeout=10s
+            Go Back
         END
     END

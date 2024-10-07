@@ -29,7 +29,7 @@ Valid Bill Payment
         Click Element    ${billPayPage.sendPayment_button}
         Sleep    3
         Wait Until Page Contains    ${billPayPage.paymentComplete}    timeout=10s
-        @{account}    Get List Items    ${billPayPage.fromAccount}
+        Click Element    ${accountServicesPage.BillPay}
     END
     
 

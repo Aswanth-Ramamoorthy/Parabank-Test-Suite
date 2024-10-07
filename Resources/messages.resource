@@ -6,6 +6,7 @@
 ${customerLogin.noInputError}    Please enter a username and password
 ${customerLogin.invalidLoginError}    The username and password could not be verified.
 ${customerLogin.accountOverview}    Accounts Overview
+${customerLogin.InternalError}    An internal error has occurred and has been logged.
 
 #Customer Registration Page
 ${registerPage.registationSuccessMessage}    Your account was created successfully. You are now logged in.
