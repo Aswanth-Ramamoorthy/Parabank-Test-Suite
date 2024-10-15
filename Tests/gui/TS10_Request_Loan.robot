@@ -1,9 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary    timeout=10s
-Resource    ../../Keywords/KW1_setupTeardown.robot
-Resource    ../../Keywords/KW2_landingPage.robot
-Resource    ../../Keywords/KW5_customerLogin.robot
-Resource    ../../Keywords/KW12_requestLoan.robot
+Resource    ../../Keywords/gui/KW1_setupTeardown.robot
+Resource    ../../Keywords/gui/KW2_landingPage.robot
+Resource    ../../Keywords/gui/KW5_customerLogin.robot
+Resource    ../../Keywords/gui/KW12_requestLoan.robot
 
 Test Setup        Open Web Browser    ${url}    ${browser}    
 Test Teardown     Logout the user and Close the Web Browser

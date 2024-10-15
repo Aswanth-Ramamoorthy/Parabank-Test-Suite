@@ -1,9 +1,9 @@
 *** Settings ***
 Documentation     Test case for the user registration page
 Library           SeleniumLibrary    timeout=10s
-Resource          ../../Keywords/KW1_setupTeardown.robot
-Resource          ../../Keywords/KW2_landingPage.robot
-Resource          ../../Keywords/KW3_signingUp.robot
+Resource          ../../Keywords/gui/KW1_setupTeardown.robot
+Resource          ../../Keywords/gui/KW2_landingPage.robot
+Resource          ../../Keywords/gui/KW3_signingUp.robot
 
 Test Setup        Open Web Browser    ${url}    ${browser}
 Test Teardown     Close the browser

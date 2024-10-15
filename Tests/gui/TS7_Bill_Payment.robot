@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation     This is a test case to verify bill payment
 Library    SeleniumLibrary    timeout=10s
-Resource    ../../Keywords/KW1_setupTeardown.robot
-Resource    ../../Keywords/KW2_landingPage.robot
-Resource    ../../Keywords/KW5_customerLogin.robot
-Resource    ../../Keywords/KW9_billPay.robot
+Resource    ../../Keywords/gui/KW1_setupTeardown.robot
+Resource    ../../Keywords/gui/KW2_landingPage.robot
+Resource    ../../Keywords/gui/KW5_customerLogin.robot
+Resource    ../../Keywords/gui/KW9_billPay.robot
 
 Test Setup        Open Web Browser    ${url}    ${browser}
 Test Teardown     Logout the user and Close the Web Browser

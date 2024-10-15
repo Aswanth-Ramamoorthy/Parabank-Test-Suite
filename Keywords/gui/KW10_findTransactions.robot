@@ -1,9 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    XML
-Resource    ../Resources/elements.resource
-Resource    ../Resources/variables.resource
-Resource    ../Resources/messages.resource
+Resource    ../../Resources/elements.resource
+Resource    ../../Resources/variables.resource
+Resource    ../../Resources/messages.resource
 *** Keywords ***
 
 Find by Transaction with valid Transaction ID

@@ -1,8 +1,8 @@
 *** Settings ***
 
 Library    SeleniumLibrary
-Resource    ../Resources/variables.resource
-Resource    ../Resources/elements.resource
+Resource    ../../Resources/variables.resource
+Resource    ../../Resources/elements.resource
 *** Keywords ***
 
 #Test Setup

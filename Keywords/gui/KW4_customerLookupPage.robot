@@ -1,9 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    CryptoLibrary    variable_decryption=False
-Resource    ../Resources/elements.resource
-Resource    ../Resources/variables.resource
-Resource    ../Resources/messages.resource
+Resource    ../../Resources/elements.resource
+Resource    ../../Resources/variables.resource
+Resource    ../../Resources/messages.resource
 
 *** Keywords ***
 

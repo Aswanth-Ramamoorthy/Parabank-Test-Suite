@@ -1,8 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../Resources/elements.resource
-Resource    ../Resources/variables.resource
-Resource    ../Resources/messages.resource
+Resource    ../../Resources/elements.resource
+Resource    ../../Resources/variables.resource
+Resource    ../../Resources/messages.resource
 *** Keywords ***
 Valid Transfer Funds between accounts
     [Documentation]    Transfer funds between two accounts with valid information.

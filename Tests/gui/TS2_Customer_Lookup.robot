@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation     Test case for the customer Lookup page
 Library           SeleniumLibrary    timeout=10s
-Resource          ../../Keywords/KW1_setupTeardown.robot
-Resource          ../../Keywords/KW2_landingPage.robot
-Resource          ../../Keywords/KW3_signingUp.robot
-Resource          ../../Keywords/KW4_customerLookupPage.robot
+Resource          ../../Keywords/gui/KW1_setupTeardown.robot
+Resource          ../../Keywords/gui/KW2_landingPage.robot
+Resource          ../../Keywords/gui/KW3_signingUp.robot
+Resource          ../../Keywords/gui/KW4_customerLookupPage.robot
 
 Test Setup        Open Web Browser    ${url}    ${browser}
 Test Teardown     Close the browser
